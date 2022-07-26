@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact Me</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact2.html">Contact2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone_num" placeholder="07xx xxx xxx" pattern="\d{4}\d{3}\d{3}" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
